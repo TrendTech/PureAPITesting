@@ -1,0 +1,12 @@
+'{
+	"jinVo":{
+		"mode$(金格签章模式0文本定位1绝对坐标)":"8",
+		"imgDataType$(签章方式1文件2服务器)":"135",
+		"keySn$(签章服务keysn)":"BAz",
+		"url$(签章服务URL)":"8Ds",
+		"signSupplierId$(签章类型KingGrid金格DianJu点聚Custom自定义)":"ROp",
+		"logIp$(签章IP)":"C9",
+		"password$(签章密码)":"i7ZP",
+		"singMethod$(金格获取章的方式1章名称0章的序号)":"2997"
+	}
+}'

@@ -1,0 +1,7 @@
+'{
+	"caseId$(驳回后重新提交需要传入原来流程的caseId)":"HlE",
+	"typeCode$(流程标识与InitFlowBean中注册的业务类型保持一致)":"nr3",
+	"businessId$(业务id)":"oE",
+	"remark$(备注流程提交时的备注信息)":"e79",
+	"express$(加急1加急0不加急)":"kCa"
+}'

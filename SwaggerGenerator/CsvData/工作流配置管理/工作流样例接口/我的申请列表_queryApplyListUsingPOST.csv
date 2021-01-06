@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"endDate":"AZy3","pageNo":"075","cltNo":"Ya0","pageSize":"1","state":"CO","startDate":"AGR"};200;200;空;空

@@ -1,0 +1,8 @@
+'{
+	"dianSignVO":{
+		"url$(签章服务URL)":"7p",
+		"signSupplierId$(签章类型KingGrid金格DianJu点聚Custom自定义)":"lh0O",
+		"password$(签章密码)":"Z_k",
+		"keyAddress$(证书地址)":"hsP"
+	}
+}'

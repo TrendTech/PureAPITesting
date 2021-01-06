@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"budgetType":"OXGd","totalRow":"5","autoEnable":"445","startRow":"8339","totalPage":"3","groupId":"9996","endRow":"6525","pageSize":"53","currentPage":"11"};200;200;空;空

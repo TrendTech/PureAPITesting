@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"updatedTime":"2099-06-21 06:17:47","creator":"0sn","isEnable$(是否启用0未启用1启用)":"3","code$(国际币种代码)":"wIxU","countryName$(国家名称)":"3NO","name$(币种名称)":"Pf9","createdTime":"2042-03-21 07:24:17","id":"7164","symbol$(货币符号)":"NJkW","baseCurrency$(本位币1本位币人民币2基准外币美元3其他)":"8","englishName$(英文名称)":"bC","updater":"Mc7"},"pageSize":"99","pageNum":"1"};200;200;空;空

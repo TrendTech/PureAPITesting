@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"budgetType":"VTU","new":true,"termMode":"fs","bdgKey":"kZj","displayOrder":"028","makingMode":"M0R","subType":"6aa","budgetName":"H1"};200;200;空;空

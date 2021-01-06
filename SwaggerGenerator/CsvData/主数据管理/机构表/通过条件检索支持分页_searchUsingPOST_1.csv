@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"no$(营业机构号)":"CQz","levelCode$(机构分级码)":"GuI","type$(机构性质1总部机构2一般分支3结算中心)":"3","updatedTime":"2056-01-11 08:35:08","creator":"5x","isEnable$(是否启用0未启用1启用)":"2","createdTime":"1983-08-25 02:43:28","cltNo$(单位编号客户编号)":"W1w","id":"353","singleBook$(单独记账1是0否)":"2","name$(营业机构名称)":"e0e","updater":"erKl"},"pageSize":"7","pageNum":"0"};200;200;空;空

@@ -1,0 +1,18 @@
+'{
+	"data":{
+		"no$(营业机构号)":"kh",
+		"levelCode$(机构分级码)":"lJ",
+		"type$(机构性质1总部机构2一般分支3结算中心)":"2",
+		"updatedTime":"2057-01-21 02:07:32",
+		"creator":"NLx",
+		"isEnable$(是否启用0未启用1启用)":"1",
+		"createdTime":"2059-06-16 09:37:15",
+		"cltNo$(单位编号客户编号)":"air",
+		"id":"0",
+		"singleBook$(单独记账1是0否)":"3",
+		"name$(营业机构名称)":"yEJ",
+		"updater":"CH"
+	},
+	"pageSize":"18",
+	"pageNum":"50"
+}'

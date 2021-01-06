@@ -1,0 +1,26 @@
+'{
+	"data":{
+		"address$(公司地址)":"S95",
+		"englishName$(单位英文名称)":"6BsL",
+		"updatedTime":"2098-06-25 06:14:32",
+		"creator":"OIz",
+		"treeNo$(级别编码)":"88vo",
+		"orgParentNo":"W3I",
+		"type$(单位类型0财务公司1成员单位2金融机构3其他合作伙伴4集团公司5结算中心7经销商6供应商8法人9其他)":"3",
+		"shortName$(中文简称)":"4iZ",
+		"showOrder$(显示顺序)":"UnAt",
+		"branchNo$(所属机构)":"MK",
+		"chineseName$(单位名称)":"hy",
+		"state$(单位状态0正常1注销2停用9其他x未知)":"2",
+		"updater":"jhU",
+		"cltNo$(单位编号)":"Q4Ge",
+		"isEnable$(是否启用0未启用1启用)":"0",
+		"zipCode$(邮政编码)":"3Lm",
+		"createdTime":"2046-10-23 04:34:29",
+		"id":"85",
+		"orgParentId$(父单位)":"AFH",
+		"fullCusNo$(完整单位编号)":"pj"
+	},
+	"pageSize":"702",
+	"pageNum":"9"
+}'

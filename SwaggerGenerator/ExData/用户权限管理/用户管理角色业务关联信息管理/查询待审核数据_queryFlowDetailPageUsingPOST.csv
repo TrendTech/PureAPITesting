@@ -1,0 +1,28 @@
+'{
+	"data":{
+		"startIndex$(分页参数)":"531",
+		"wfBusyInfo":{
+			"relaName":"1S3F",
+			"isSerach$(是否快捷搜索1是0否)":"CUG",
+			"relaNo":"HV",
+			"isUsable":"Is",
+			"uNo":"CT",
+			"displayOrder":"CJF",
+			"relaId":"26",
+			"busyType$(业务类型1界面2按钮)":"s3_j",
+			"attrName":"zqw"
+		},
+		"bussNo$(业务流水)":"Io",
+		"relaNo$(业务权限编号)":"lpc",
+		"size$(每页展示条数)":"25",
+		"endCreateDate$(结束创建日期yyyyMMdd)":"ODJ",
+		"roleId$(角色id)":"5309",
+		"isUsable$(是否启用)":"OUG",
+		"resNo$(资源编号)":"pGOG",
+		"creator$(创建人)":"xf",
+		"startCreateDate$(开始创建日期yyyyMMdd)":"oxB",
+		"state$(授权状态1已授权2授权失败3授权中)":"HbvH"
+	},
+	"pageSize":"5",
+	"pageNum":"0"
+}'

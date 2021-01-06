@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"currencyNo":"Nwnf","currencyName":"fc","endDate":"2038-10-25 07:19:20","accountNo":"BWA","natureId":"571","bankNo":"Nkh","cropName":"KZR","cropNo":"PMIe","startDate":"2039-05-04 10:56:17"};200;200;空;空

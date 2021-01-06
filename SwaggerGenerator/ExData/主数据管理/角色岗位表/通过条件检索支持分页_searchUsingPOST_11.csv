@@ -1,0 +1,17 @@
+'{
+	"data":{
+		"no$(角色编号)":"SfJ",
+		"updatedTime":"2095-02-13 03:10:11",
+		"creator":"4CK3",
+		"isEnable$(是否启用0未启用1启用)":"0",
+		"parentId$(角色父id编号当该部门为顶级部门时该字段为0)":"eyZ",
+		"createdTime":"2060-05-21 03:55:13",
+		"name$(角色名称)":"JcCG",
+		"description$(角色描述)":"a37T",
+		"id":"28",
+		"showOrder$(显示顺序)":"yMI",
+		"updater":"t6C"
+	},
+	"pageSize":"9",
+	"pageNum":"933"
+}'

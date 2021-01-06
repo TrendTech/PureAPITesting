@@ -1,0 +1,5 @@
+com\swagger\beans\GroupBeans.class
+com\swagger\SwaggerGenerator.class
+com\swagger\SwaggerGenerator$1.class
+com\swagger\beans\APIBeans.class
+com\swagger\GenerateConfig.class

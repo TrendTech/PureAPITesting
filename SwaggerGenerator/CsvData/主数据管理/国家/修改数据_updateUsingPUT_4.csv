@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"englishName":"myK","updatedTime":"2017-05-26 07:45:00","creator":"f5E","code":"ChgT","name":"YZZ","createdTime":"2063-05-17 02:16:49","id":"567","shortName":"dc2","isEnable":"0","updater":"7X"};200;200;空;空

@@ -1,0 +1,15 @@
+'{
+	"englishKey$(英文缩写代码)":"YhCH",
+	"updatedTime":"1997-07-12 06:34:28",
+	"creator":"zMlI",
+	"shortName$(银行简称)":"N4U",
+	"bankRoutingStrategy$(路由策略account账户路由规则btx交易路由规则fixed固定路由规则默认为account)":"x6J",
+	"bankType$(机构类型0非银行1银行2外资银行3其他)":"3",
+	"updater":"RlZT",
+	"connectFlag$(是否直连银行0否1是)":"2",
+	"isEnable$(是否启用0未启用1启用)":"2",
+	"name$(银行名称)":"6x",
+	"createdTime":"1993-12-10 04:33:57",
+	"code$(银行编号)":"LEV",
+	"id":"4"
+}'

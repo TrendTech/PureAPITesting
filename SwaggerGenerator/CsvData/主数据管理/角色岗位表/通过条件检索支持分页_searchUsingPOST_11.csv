@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"no$(角色编号)":"xR0","updatedTime":"2000-09-29 04:55:03","creator":"Ywz","isEnable$(是否启用0未启用1启用)":"0","parentId$(角色父id编号当该部门为顶级部门时该字段为0)":"c2P","createdTime":"2019-01-05 07:04:26","name$(角色名称)":"Pll","description$(角色描述)":"b4D","id":"8","showOrder$(显示顺序)":"tLV","updater":"AJH"},"pageSize":"467","pageNum":"8309"};200;200;空;空

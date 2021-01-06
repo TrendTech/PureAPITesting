@@ -1,0 +1,22 @@
+'{
+	"address$(公司地址)":"zE9",
+	"englishName$(单位英文名称)":"NHj",
+	"updatedTime":"2061-05-26 11:41:08",
+	"creator":"vE7",
+	"treeNo$(级别编码)":"bOd",
+	"orgParentNo":"9d",
+	"type$(单位类型0财务公司1成员单位2金融机构3其他合作伙伴4集团公司5结算中心7经销商6供应商8法人9其他)":"0",
+	"shortName$(中文简称)":"Q7i",
+	"showOrder$(显示顺序)":"Zdq",
+	"branchNo$(所属机构)":"QZ8",
+	"chineseName$(单位名称)":"KS",
+	"state$(单位状态0正常1注销2停用9其他x未知)":"695",
+	"updater":"shZ",
+	"cltNo$(单位编号)":"4Pg9",
+	"isEnable$(是否启用0未启用1启用)":"0",
+	"zipCode$(邮政编码)":"8hy",
+	"createdTime":"2075-05-13 09:32:57",
+	"id":"9318",
+	"orgParentId$(父单位)":"me",
+	"fullCusNo$(完整单位编号)":"6Zsd"
+}'

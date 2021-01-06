@@ -1,0 +1,22 @@
+'{
+	"address$(公司地址)":"1D40",
+	"englishName$(单位英文名称)":"7p",
+	"updatedTime":"2085-12-01 08:05:53",
+	"creator":"5N",
+	"treeNo$(级别编码)":"rD",
+	"orgParentNo":"RCW",
+	"type$(单位类型0财务公司1成员单位2金融机构3其他合作伙伴4集团公司5结算中心7经销商6供应商8法人9其他)":"2",
+	"shortName$(中文简称)":"Xc",
+	"showOrder$(显示顺序)":"vy",
+	"branchNo$(所属机构)":"7Ec",
+	"chineseName$(单位名称)":"ci2",
+	"state$(单位状态0正常1注销2停用9其他x未知)":"161",
+	"updater":"Vs",
+	"cltNo$(单位编号)":"PmwH",
+	"isEnable$(是否启用0未启用1启用)":"1",
+	"zipCode$(邮政编码)":"zv",
+	"createdTime":"1973-03-01 01:52:38",
+	"id":"2483",
+	"orgParentId$(父单位)":"VLAA",
+	"fullCusNo$(完整单位编号)":"zVzH"
+}'

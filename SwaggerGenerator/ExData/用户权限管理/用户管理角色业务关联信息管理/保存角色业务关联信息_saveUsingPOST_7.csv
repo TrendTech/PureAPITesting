@@ -1,0 +1,24 @@
+'{
+	"startIndex$(分页参数)":"096",
+	"wfBusyInfo":{
+		"relaName":"Yi",
+		"isSerach$(是否快捷搜索1是0否)":"pPk",
+		"relaNo":"j1s",
+		"isUsable":"O8r",
+		"uNo":"4q",
+		"displayOrder":"kZl",
+		"relaId":"2743",
+		"busyType$(业务类型1界面2按钮)":"xP",
+		"attrName":"1hn"
+	},
+	"bussNo$(业务流水)":"wH5",
+	"relaNo$(业务权限编号)":"YO",
+	"size$(每页展示条数)":"232",
+	"endCreateDate$(结束创建日期yyyyMMdd)":"DGt",
+	"roleId$(角色id)":"428",
+	"isUsable$(是否启用)":"3M",
+	"resNo$(资源编号)":"Rp",
+	"creator$(创建人)":"9PpS",
+	"startCreateDate$(开始创建日期yyyyMMdd)":"plT",
+	"state$(授权状态1已授权2授权失败3授权中)":"08"
+}'

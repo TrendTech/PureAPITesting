@@ -1,0 +1,15 @@
+'{
+	"bindingCode$(设备注册码)":"NV8",
+	"status$(用户状态2未开通3已开通4已激活5已锁定6已作废7已解绑)":"0",
+	"uno$(移动账号)":"63p",
+	"mobileNo":"N3wp",
+	"gesture$(手势密码)":"nCo",
+	"certCode$(证书编码)":"Sb",
+	"modifyTime$(更新时间yyyymmddhhmiss)":"BOEm",
+	"userDn$(用户DN)":"9A1",
+	"gestureSwitch$(手势开关0未开启1已开启)":"Mz",
+	"bussNo$(业务流水)":"3h2c",
+	"createTime$(创建时间yyyymmddhhmiss)":"4w",
+	"fpSwitch$(指纹开关0未开启1已开启)":"8eK",
+	"id$(主键id)":"3329"
+}'

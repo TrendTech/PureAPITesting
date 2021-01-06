@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"certCode":"EAB","gestureSwitch":"zP","bindingCode":"kKtI","mobileNo":"NY","fpSwitch":"nFF5","gesture":"PL","modifyTime":"AKh","bussNo":"pU","createTime":"b7B","uno":"5Ad","id":"84","userDn":"gaF","status":"3"};200;200;空;空

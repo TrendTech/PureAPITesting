@@ -1,0 +1,24 @@
+'{
+	"data":{
+		"phone$(固定电话)":"pxX",
+		"email$(邮箱)":"vs8po@iWr8.ie",
+		"fullName$(人员名称)":"3Q3",
+		"fullCltName$(客户名称)":"bh5Z",
+		"name$(人员名称)":"Ut",
+		"resignDate$(离职日期)":"1978-07-23 06:49:07",
+		"remark$(备注)":"E1",
+		"cltName$(客户名称)":"fo",
+		"employDate$(入职日期)":"2081-11-19 06:19:59",
+		"depName$(部门名称)":"jhZ",
+		"employeeNo$(职工号)":"oQ",
+		"mobile$(移动电话)":"Kss",
+		"cltNo$(单位编号)":"U5c6",
+		"gender$(性别1男2女)":"1",
+		"fax$(传真)":"xU",
+		"id$(人员id)":"86",
+		"depNo$(部门编号)":"75s",
+		"status$(状态0离职1在职)":"0"
+	},
+	"pageSize":"823",
+	"pageNum":"458"
+}'

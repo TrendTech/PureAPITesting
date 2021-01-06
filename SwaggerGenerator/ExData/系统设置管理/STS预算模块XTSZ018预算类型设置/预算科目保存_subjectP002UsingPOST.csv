@@ -1,0 +1,14 @@
+'{
+	"payFlag$(是否支付控制是1否0)":"5ur",
+	"kmId$(科目ID)":"88",
+	"kmName$(科目名称)":"jE",
+	"kmPCode$(上级科目编号)":"BLF",
+	"isLast$(上级科目ID)":"zp",
+	"kmDir$(科目类型收入0支出1其他2)":"OFg",
+	"inputEL$(公式)":"9P",
+	"kmCode$(科目编号)":"4W6k",
+	"memo$(描述)":"DNF",
+	"inputMethod$(填报方式录入项计算项公式项自动取值)":"OxfN",
+	"disableFlag$(是否启用是1否0)":"zzDN",
+	"kmPId$(上级科目ID)":"5658"
+}'

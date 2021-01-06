@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <!-- 用来定义Swagger的地址，端口，主路径和描述信息的json访问路径-->
+    <swagger>
+        <ServerUrl>http://192.168.60.44/</ServerUrl> <!-- Url地址-->
+        <ServerPort>5001</ServerPort> <!-- Url端口-->
+        <BasePath>/bems</BasePath> <!-- 基础路径-->
+        <Path>/swagger-resources</Path> <!-- resources路径-->
+    </swagger>
+    <!-- 这里用来定义全局数据的文件名和用例的保存目录，这两个文件和文件夹保存在同一目录下-->
+    <global>
+        <filePath>全局数据.csv</filePath> <!-- 全局数据的文件，默认即可-->
+        <casePath>CsvData</casePath> <!-- 用例文件的文件夹，默认即可-->
+    </global>
+    <!-- 这里用来定义接口用例所需的列 -->
+    <caseConfig>
+        <column>用例名</column><!-- 用例的名字，用来这个测试用例是干什么的-->
+        <column>请求参数或报文</column><!-- 按照不同类型填入不同请求报文-->
+        <column>验证-回传Code</column><!-- response的code，比如200,400,500等-->
+        <column>验证-业务Code</column><!-- response内部业务自定义的code-->
+        <column>验证-响应Msg</column><!-- response内务业务回传的message-->
+        <column>验证-存在字符</column><!-- 其他可用于验证的存在字符，默认写入和msg一样的文字-->
+    </caseConfig>
+    <!-- 忽略的用例，这里主要用来忽略下载文件的接口用例，会影响性能及报告-->
+    <ignoreCases>
+        <casePath>mdm/person/export/Q004</casePath><!-- 按照格式填写，不要填写基础路径-->
+        <casePath>mdm/person/template/Q005</casePath>
+        <casePath>user/WfImportUser/Q002</casePath>
+    </ignoreCases>
+    <!-- 这里用来配置生成随机数据-->
+    <testDataGenerate enable="true">
+        <!-- 测试用例的生成数量-->
+        <loops>1</loops>
+        <!-- 测试字段类型的匹配正则 -->
+        <rules enable="true">
+            <String>[a-z0-9A-Z]{1,2}\w{1,2}</String>
+            <Integer>[0-9]{1,4}</Integer>
+        </rules>
+        <!-- 特殊测试字段的匹配正则 -->
+        <specific enable="true">
+            <key value="gender">[01]</key>
+            <key value="status">[01]</key>
+            <key value="isWorkday">[01]</key>
+            <key value="isEnable">[01]</key>
+            <key value="bankType">[0123]</key>
+            <key value="connectFlag">[01]</key>
+            <key value="singleBook">[01]</key>
+            <key value="type">[01]</key>
+            <key value="email">[a-z0-9]{5,15}\@\w{3,5}\.[a-z]{2,3}</key>
+            <key value="month">(18|19|20|21)[0-9][0-9]-0(0[1-9]1[0-2])-[0-9][0-9]</key>
+            <key value="approveState">[123]</key>
+        </specific>
+    </testDataGenerate>
+    <!-- 是否生成测试Body的例子和路径 -->
+    <exampleGenerate enable="true">
+        <examplePath>ExData</examplePath>
+    </exampleGenerate>
+</root>

@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"budgetType":"gqv","totalRow":"638","startRow":"42","totalPage":"1470","groupId":"6","endRow":"42","memberName":"hC7","pageSize":"882","currentPage":"98"};200;200;空;空

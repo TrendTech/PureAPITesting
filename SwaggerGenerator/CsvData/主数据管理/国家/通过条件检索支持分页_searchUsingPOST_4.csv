@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"updatedTime":"2095-05-11 06:08:19","creator":"rIP","isEnable$(是否启用0未启用1启用)":"3","name$(中文名称)":"El","shortName$(中文简称)":"Pvp","createdTime":"2017-05-10 11:13:46","id":"98","code$(英文缩写)":"SlP","englishName$(英文名称)":"fz","updater":"Fis"},"pageSize":"4","pageNum":"91"};200;200;空;空

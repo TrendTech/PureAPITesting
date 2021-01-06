@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"jinVo":{"mode$(金格签章模式0文本定位1绝对坐标)":"1595","imgDataType$(签章方式1文件2服务器)":"0210","keySn$(签章服务keysn)":"m7","url$(签章服务URL)":"xbA","signSupplierId$(签章类型KingGrid金格DianJu点聚Custom自定义)":"Lt","logIp$(签章IP)":"srcc","password$(签章密码)":"57I5","singMethod$(金格获取章的方式1章名称0章的序号)":"06"}};200;200;空;空

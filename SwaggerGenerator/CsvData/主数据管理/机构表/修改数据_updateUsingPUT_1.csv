@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"levelCode":"aGN","no":"r8","updatedTime":"2077-07-22 06:01:18","creator":"7sk","name":"96d","cltNo":"1W0","createdTime":"2098-03-26 03:01:51","id":"3","type":"3","singleBook":"3","isEnable":"2","updater":"MZ"};200;200;空;空

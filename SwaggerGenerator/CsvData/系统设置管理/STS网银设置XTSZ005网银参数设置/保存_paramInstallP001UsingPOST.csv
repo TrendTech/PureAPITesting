@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"isInnerAutoSelect":"jrSY","attestWhenOperateOrder":"bBv","nonBankOrderCloseTime":"kAj","recOpenBankFlag":"NN9","noticeAppointment":"x9","dueDate":"Db","expectedDateOfPayment":"su","sendRowCount":"SPF","sendRemoteMode":"n6y","paymentPaymentReceiverScope":"jd2","gatherConfirmMode":"XW","closeTime":"y7T","isValidatorActDate":"dtT","purposeLength":"DrT","customerSearchMode":"SspA"};200;200;空;空

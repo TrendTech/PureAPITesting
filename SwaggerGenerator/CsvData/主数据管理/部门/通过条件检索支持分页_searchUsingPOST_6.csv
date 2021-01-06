@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"updatedTime":"2020-06-05 02:47:25","creator":"IJL","isEnable$(是否启用0未启用1启用)":"2","no$(部门编号)":"zHL","name$(部门名称)":"4Cr","createdTime":"2044-12-01 12:36:22","id":"83","parentId$(部门父id编号当该部门为顶级部门时该字段等于0)":"zawo","showOrder$(显示顺序)":"iC","description$(部门描述)":"cKx","updater":"ng4E"},"pageSize":"677","pageNum":"83"};200;200;空;空

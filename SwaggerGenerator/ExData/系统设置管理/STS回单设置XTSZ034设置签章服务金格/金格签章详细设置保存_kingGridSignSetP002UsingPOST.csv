@@ -1,0 +1,16 @@
+'{
+	"code$(电子章编码)":"4kL",
+	"size$(签章日期的字体大小)":"1",
+	"color$(签章日期的颜色)":"7680",
+	"branchNo$(所属机构)":"lXe",
+	"font$(字体)":"wNp",
+	"id$(ID)":"26",
+	"name$(电子章名称)":"m1R",
+	"signSupplier$(签章服务供应商)":"xz",
+	"positionX$(签章日期相对于章左上角的坐标X)":"407",
+	"needDate$(是否需要日期)":true,
+	"positionDX$(签章日期的宽度W)":"3",
+	"positionDY$(签章日期的宽度H)":"15",
+	"filePath$(图片存储路径)":"Z8G",
+	"positionY$(签章日期相对于章左上角的坐标Y)":"7"
+}'

@@ -1,0 +1,13 @@
+'{
+	"no$(角色编号)":"GWR",
+	"updatedTime":"2048-01-12 05:38:10",
+	"creator":"Ewo",
+	"isEnable$(是否启用0未启用1启用)":"2",
+	"parentId$(角色父id编号当该部门为顶级部门时该字段为0)":"xD",
+	"createdTime":"1978-01-04 07:54:25",
+	"name$(角色名称)":"cFK",
+	"description$(角色描述)":"msD",
+	"id":"99",
+	"showOrder$(显示顺序)":"m3Z",
+	"updater":"dxP"
+}'

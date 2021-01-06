@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"updatedTime":"2016-05-29 09:40:32","creator":"HXx","pbocRegionCode":"Ku","bankAddr":"sFJ","bankName":"lC","source":"hx","updater":"82","regionCode":"SrW","cnapsNo":"vn2","bankNo":"ms","createdTime":"2081-05-01 03:52:35","id":"8071","stdBankNo":"ZAb"};200;200;空;空

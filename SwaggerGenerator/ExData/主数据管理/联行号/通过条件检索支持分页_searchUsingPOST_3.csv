@@ -1,0 +1,19 @@
+'{
+	"data":{
+		"updatedTime":"1980-10-14 09:16:00",
+		"creator":"VDo",
+		"pbocRegionCode$(人行地区编码)":"hKJ",
+		"source$(联行号来源)":"veA",
+		"updater":"nY",
+		"bankAddr$(银行地址)":"9c",
+		"cnapsNo$(联行号)":"r3",
+		"stdBankNo$(标准银行编号)":"s9",
+		"regionCode$(标准地区代码)":"2QT",
+		"bankName$(银行名称)":"ApOp",
+		"createdTime":"2084-01-23 09:25:34",
+		"bankNo$(银行编号)":"Ga",
+		"id":"52"
+	},
+	"pageSize":"9",
+	"pageNum":"67"
+}'

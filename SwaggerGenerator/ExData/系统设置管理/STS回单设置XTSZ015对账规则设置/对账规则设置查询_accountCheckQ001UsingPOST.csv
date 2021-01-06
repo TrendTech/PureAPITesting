@@ -1,0 +1,10 @@
+'{
+	"excludeAccState$(需排除的账户状态)":"SnJ",
+	"excludeNo$(需排除账户)":"IVi",
+	"excludeCustState$(需排除的客户状态)":"C3i",
+	"otherNo$(指定科目外账户)":"Cb",
+	"assignKm$(指定科目)":"ndsY",
+	"autoStamt$(是否自动生成月度对账单)":"9Pt",
+	"contain0Val$(是否包含余额为零的账户)":"rxd3",
+	"empty":true
+}'

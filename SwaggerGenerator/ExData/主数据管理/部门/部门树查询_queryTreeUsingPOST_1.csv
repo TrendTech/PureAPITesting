@@ -1,0 +1,13 @@
+'{
+	"updatedTime":"2064-02-18 06:41:31",
+	"creator":"qAJ",
+	"isEnable$(是否启用0未启用1启用)":"0",
+	"no$(部门编号)":"WjR",
+	"name$(部门名称)":"LVQ",
+	"createdTime":"2081-09-29 07:33:02",
+	"id":"0264",
+	"parentId$(部门父id编号当该部门为顶级部门时该字段等于0)":"owmX",
+	"showOrder$(显示顺序)":"63",
+	"description$(部门描述)":"ui",
+	"updater":"6Lk3"
+}'

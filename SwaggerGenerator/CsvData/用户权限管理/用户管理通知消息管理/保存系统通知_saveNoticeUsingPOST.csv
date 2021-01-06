@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"receiverClts":"DV","nId":"71","title":"kCQl","type":"1","receiveIds":"UH","content":"3Gq","tId":"6","receiveRoles":"cp","senderId":"4086","createtimeStr":"oWC","uno":"jBk","detailUrl":"g0y","state":"715"};200;200;空;空

@@ -1,0 +1,17 @@
+'{
+	"data":{
+		"showOrder$(排序)":"oX7",
+		"createTime$(创建时间)":"C4",
+		"name$(名称)":"DYp",
+		"orgParentId$(父id)":"6",
+		"updater$(修改人)":"nwr",
+		"isEnable$(是否启用)":"3",
+		"updateTime$(修改时间)":"8HX",
+		"creator$(创建人)":"2JT6",
+		"opType$(权限类型1本单位2本单位及直属下级3本单位及所有下级4其他)":"Iig",
+		"id$(主键id)":"8",
+		"no$(编号)":"rc"
+	},
+	"pageSize":"6074",
+	"pageNum":"4436"
+}'

@@ -1,0 +1,18 @@
+'{
+	"data":{
+		"updatedTime":"2014-08-30 05:46:00",
+		"creator":"MHOv",
+		"isEnable$(是否启用0未启用1启用)":"2",
+		"code$(国际币种代码)":"D3",
+		"countryName$(国家名称)":"cjg",
+		"name$(币种名称)":"eN",
+		"createdTime":"2020-03-01 03:54:55",
+		"id":"7056",
+		"symbol$(货币符号)":"HgcS",
+		"baseCurrency$(本位币1本位币人民币2基准外币美元3其他)":"67",
+		"englishName$(英文名称)":"m1t",
+		"updater":"oBA"
+	},
+	"pageSize":"539",
+	"pageNum":"70"
+}'

@@ -1,0 +1,13 @@
+'{
+	"no$(角色编号)":"YcB",
+	"updatedTime":"2035-09-01 02:10:52",
+	"creator":"fP6y",
+	"isEnable$(是否启用0未启用1启用)":"1",
+	"parentId$(角色父id编号当该部门为顶级部门时该字段为0)":"kHsc",
+	"createdTime":"2006-05-03 10:27:49",
+	"name$(角色名称)":"cVB",
+	"description$(角色描述)":"7E3",
+	"id":"719",
+	"showOrder$(显示顺序)":"38_",
+	"updater":"BtN1"
+}'

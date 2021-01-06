@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"updatedTime":"1980-10-31 06:57:47","creator":"Qr","targetCurrencyCode$(目标货币)":"w6Zi","createdTime":"2011-05-15 11:02:58","rateDate$(汇率日期)":"2042-11-21 12:31:07","id":"615","currencyCode$(原始货币)":"wTT","updater":"ekS"},"pageSize":"9297","pageNum":"0"};200;200;空;空

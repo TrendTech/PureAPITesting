@@ -1,0 +1,17 @@
+'{
+	"data":{
+		"updatedTime":"2077-02-03 12:32:18",
+		"creator":"MJ",
+		"isEnable$(是否启用0未启用1启用)":"2",
+		"no$(部门编号)":"reH7",
+		"name$(部门名称)":"FGv",
+		"createdTime":"1976-09-02 04:05:14",
+		"id":"8",
+		"parentId$(部门父id编号当该部门为顶级部门时该字段等于0)":"k1F",
+		"showOrder$(显示顺序)":"10g",
+		"description$(部门描述)":"SWE",
+		"updater":"tb"
+	},
+	"pageSize":"8",
+	"pageNum":"980"
+}'

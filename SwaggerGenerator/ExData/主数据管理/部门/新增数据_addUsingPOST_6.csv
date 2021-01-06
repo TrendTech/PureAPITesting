@@ -1,0 +1,13 @@
+'{
+	"updatedTime":"2075-06-23 02:52:10",
+	"creator":"Xoq",
+	"isEnable$(是否启用0未启用1启用)":"3",
+	"no$(部门编号)":"ef",
+	"name$(部门名称)":"PdQQ",
+	"createdTime":"2042-07-07 12:16:12",
+	"id":"693",
+	"parentId$(部门父id编号当该部门为顶级部门时该字段等于0)":"Px",
+	"showOrder$(显示顺序)":"RrI",
+	"description$(部门描述)":"qRv",
+	"updater":"zJW5"
+}'

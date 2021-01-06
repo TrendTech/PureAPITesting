@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"no":"jUb","updatedTime":"2026-12-25 12:23:20","creator":"TWNC","name":"GT","createdTime":"2015-07-20 08:12:52","description":"9v","showOrder":"orm","id":"948","parentId":"ATc","isEnable":"3","updater":"c4es"};200;200;空;空

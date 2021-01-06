@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"updatedTime":"2057-12-09 07:32:09","creator":"W5v","level$(地名级别)":"Pqw","name$(标准地区名称)":"qIN","code$(标准地区代码)":"po","fullName$(标准地区全称)":"Eb8s","createdTime":"2095-01-13 08:01:54","id":"416","updater":"wrUT"},"pageSize":"508","pageNum":"9"};200;200;空;空

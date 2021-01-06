@@ -1,0 +1,17 @@
+'{
+	"gatherConfirmMode$(存款参数设置委托收款确认方式)":"DBZ",
+	"paymentPaymentReceiverScope$(付款参数设置请款下拨收方账号范围)":"FE",
+	"dueDate$(存款参数设置到期业务提醒天数)":"nHU",
+	"isValidatorActDate$(公共参数设置复核时限制期望付款日)":"iNB",
+	"sendRemoteMode$(公共参数设置网银指令发送结算模式)":"Uqw",
+	"expectedDateOfPayment$(公共参数设置期望付款日期限)":"msZ",
+	"recOpenBankFlag$(付款参数设置收款人开户行输入方式)":"dx",
+	"sendRowCount$(公共参数设置自动任务发送网银指令数)":"XPW",
+	"nonBankOrderCloseTime$(公共参数设置内部指令的提交截止时间)":"sRb",
+	"attestWhenOperateOrder$(公共参数设置操作指令时是否验签)":"Gu0",
+	"purposeLength$(公共参数设置指令用途长度汉字)":"O4n",
+	"customerSearchMode$(公共参数设置查询时客户条件选择范围)":"g2C",
+	"closeTime$(公共参数设置银行指令的提交截止时间)":"TYP",
+	"noticeAppointment$(存款参数设置网银通知预约的方式)":"be8",
+	"isInnerAutoSelect$(付款参数设置内转收方账号选择模式)":"Fvb"
+}'

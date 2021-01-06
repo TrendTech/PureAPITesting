@@ -1,0 +1,11 @@
+'{
+	"userId$(用户id查询使用)":"9",
+	"roleNo$(角色编号)":"6LH",
+	"roleName$(角色名称)":"DYk",
+	"createUserNo$(创建人)":"az",
+	"displayOrder$(排序)":"tK",
+	"roleId$(角色id)":"78",
+	"description$(角色描述)":"9AQ",
+	"isUsable$(是否启用)":"1fVJ",
+	"pRoleId$(父角色id)":"843"
+}'

@@ -1,0 +1,15 @@
+'{
+	"englishKey$(英文缩写代码)":"GQU",
+	"updatedTime":"2066-06-15 08:49:18",
+	"creator":"J9",
+	"shortName$(银行简称)":"ur4",
+	"bankRoutingStrategy$(路由策略account账户路由规则btx交易路由规则fixed固定路由规则默认为account)":"qe",
+	"bankType$(机构类型0非银行1银行2外资银行3其他)":"2",
+	"updater":"PJf_",
+	"connectFlag$(是否直连银行0否1是)":"2",
+	"isEnable$(是否启用0未启用1启用)":"3",
+	"name$(银行名称)":"lth5",
+	"createdTime":"2064-07-09 01:14:01",
+	"code$(银行编号)":"kW6",
+	"id":"3078"
+}'

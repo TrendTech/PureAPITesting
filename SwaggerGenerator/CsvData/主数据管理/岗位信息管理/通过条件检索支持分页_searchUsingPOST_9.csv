@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"showOrder$(排序)":"Yk","createTime$(创建时间)":"ago0","name$(名称)":"721","orgParentId$(父id)":"9","updater$(修改人)":"1a5","isEnable$(是否启用)":"3","updateTime$(修改时间)":"rQ2d","creator$(创建人)":"hA","opType$(权限类型1本单位2本单位及直属下级3本单位及所有下级4其他)":"vDf","id$(主键id)":"0143","no$(编号)":"xS"},"pageSize":"92","pageNum":"8"};200;200;空;空

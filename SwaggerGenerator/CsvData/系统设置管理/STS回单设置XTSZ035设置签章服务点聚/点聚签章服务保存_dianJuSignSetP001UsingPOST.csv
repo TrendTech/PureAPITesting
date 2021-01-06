@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"dianSignVO":{"url$(签章服务URL)":"eqR","signSupplierId$(签章类型KingGrid金格DianJu点聚Custom自定义)":"VCmE","password$(签章密码)":"vKZ0","keyAddress$(证书地址)":"UX"}};200;200;空;空

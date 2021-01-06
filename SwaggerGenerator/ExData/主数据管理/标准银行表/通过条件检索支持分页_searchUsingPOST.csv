@@ -1,0 +1,19 @@
+'{
+	"data":{
+		"englishKey$(英文缩写代码)":"HUv",
+		"updatedTime":"1997-12-31 06:18:45",
+		"creator":"hMK",
+		"shortName$(银行简称)":"s0L",
+		"bankRoutingStrategy$(路由策略account账户路由规则btx交易路由规则fixed固定路由规则默认为account)":"vIrv",
+		"bankType$(机构类型0非银行1银行2外资银行3其他)":"2",
+		"updater":"PF",
+		"connectFlag$(是否直连银行0否1是)":"3",
+		"isEnable$(是否启用0未启用1启用)":"0",
+		"name$(银行名称)":"hrvp",
+		"createdTime":"2025-07-09 09:41:55",
+		"code$(银行编号)":"9at",
+		"id":"40"
+	},
+	"pageSize":"7",
+	"pageNum":"59"
+}'

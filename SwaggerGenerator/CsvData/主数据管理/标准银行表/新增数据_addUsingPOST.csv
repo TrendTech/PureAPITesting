@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"updatedTime":"1981-03-03 11:32:37","creator":"COH","englishKey":"BqX","code":"yDJ","bankType":"3","bankRoutingStrategy":"SG","connectFlag":"1","isEnable":"3","updater":"Ysd","name":"L9o","createdTime":"2029-05-15 02:45:29","id":"6959","shortName":"ic8"};200;200;空;空

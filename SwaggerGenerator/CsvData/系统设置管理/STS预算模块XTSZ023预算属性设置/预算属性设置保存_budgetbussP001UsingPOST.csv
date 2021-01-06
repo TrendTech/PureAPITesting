@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;[{"memberNo":"U6X","applySummary":"0","quotaMode":"B2yn","autoCarryover":"tNOu","payMode":"3ag","applyEndDateType":"8899","applyEndDateNum":"04","payCheck":"Bdr","appendSummary":"85","incomeMode":"Eo_"}];200;200;空;空

@@ -1,0 +1,15 @@
+'{
+	"createtimeStr$(创建时间)":"Vo",
+	"tId$(模板id)":"0682",
+	"receiveRoles$(接收人角色)":"X0g1",
+	"receiverClts$(接收人单位)":"NhD",
+	"senderId$(发送人)":"55",
+	"receiveIds$(接收人)":"g4Cy",
+	"state$(状态)":"77",
+	"detailUrl$(详情url)":"Vo",
+	"type$(类型)":"0",
+	"content$(内容)":"SJO",
+	"nId$(系统通知id修改必填)":"6",
+	"title$(标题)":"CK",
+	"uno$(用户账号)":"mc"
+}'

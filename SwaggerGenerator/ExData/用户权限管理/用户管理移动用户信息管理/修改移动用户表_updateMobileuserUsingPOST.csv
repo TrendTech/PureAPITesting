@@ -1,0 +1,15 @@
+'{
+	"bindingCode$(设备注册码)":"XcN",
+	"status$(用户状态2未开通3已开通4已激活5已锁定6已作废7已解绑)":"1",
+	"uno$(移动账号)":"QW",
+	"mobileNo":"ch_A",
+	"gesture$(手势密码)":"B8F",
+	"certCode$(证书编码)":"jJj",
+	"modifyTime$(更新时间yyyymmddhhmiss)":"Twy",
+	"userDn$(用户DN)":"lN",
+	"gestureSwitch$(手势开关0未开启1已开启)":"qth",
+	"bussNo$(业务流水)":"VQ",
+	"createTime$(创建时间yyyymmddhhmiss)":"zP",
+	"fpSwitch$(指纹开关0未开启1已开启)":"Tn4",
+	"id$(主键id)":"639"
+}'

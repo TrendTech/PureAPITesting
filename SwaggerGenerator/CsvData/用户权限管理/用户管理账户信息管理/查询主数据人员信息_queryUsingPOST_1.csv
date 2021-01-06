@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"phone$(固定电话)":"7wV","email$(邮箱)":"ue2hy1gixcv2@6TV.xk","fullName$(人员名称)":"2A","fullCltName$(客户名称)":"jYVM","name$(人员名称)":"kUYw","resignDate$(离职日期)":"2019-03-11 12:01:21","remark$(备注)":"6t","cltName$(客户名称)":"Rj","employDate$(入职日期)":"2039-06-28 04:20:49","depName$(部门名称)":"XPEx","employeeNo$(职工号)":"1s","mobile$(移动电话)":"Kfle","cltNo$(单位编号)":"D5","gender$(性别1男2女)":"1","fax$(传真)":"Oi2","id$(人员id)":"2","depNo$(部门编号)":"shB","status$(状态0离职1在职)":"3"},"pageSize":"190","pageNum":"143"};200;200;空;空

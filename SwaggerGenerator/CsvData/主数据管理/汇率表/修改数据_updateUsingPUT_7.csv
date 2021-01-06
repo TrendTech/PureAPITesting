@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"updatedTime":"2076-04-02 03:55:28","creator":"CV","createdTime":"2092-01-17 05:38:23","rateDate":"2093-08-20 01:08:25","id":"209","currencyCode":"Bi","targetCurrencyCode":"TA1","updater":"IN"};200;200;空;空

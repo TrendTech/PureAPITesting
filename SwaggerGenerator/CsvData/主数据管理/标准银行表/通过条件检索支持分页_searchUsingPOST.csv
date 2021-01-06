@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"englishKey$(英文缩写代码)":"z9Z1","updatedTime":"2057-11-25 06:00:00","creator":"wW","shortName$(银行简称)":"pH","bankRoutingStrategy$(路由策略account账户路由规则btx交易路由规则fixed固定路由规则默认为account)":"TP9","bankType$(机构类型0非银行1银行2外资银行3其他)":"1","updater":"ddg","connectFlag$(是否直连银行0否1是)":"3","isEnable$(是否启用0未启用1启用)":"1","name$(银行名称)":"VCw","createdTime":"1998-03-06 02:46:21","code$(银行编号)":"kl3","id":"004"},"pageSize":"629","pageNum":"0"};200;200;空;空

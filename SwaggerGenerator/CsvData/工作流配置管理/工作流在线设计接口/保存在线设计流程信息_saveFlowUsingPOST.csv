@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"flowInfo":{"fid":"4005","bpmn":"iKP","taskCount":"6","createtime":"2099-05-26 03:18:58","pageno":"njqP","rejectType":"831","flowname":"ZYm","flowno":"Dvj","updatetime":"2078-03-01 02:29:14","deployId":"2m9"}};200;200;空;空

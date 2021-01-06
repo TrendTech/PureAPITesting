@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"wfBusyInfo":{"relaName":"7ow","isSerach$(是否快捷搜索1是0否)":"moR","relaNo":"geq","isUsable":"P8iP","uNo":"y0W","displayOrder":"662","relaId":"8812","busyType$(业务类型1界面2按钮)":"6Htp","attrName":"gu"},"creator":"Lh","startIndex":"722","relaNo":"cd","isUsable":"lChc","size":"85","bussNo":"FA_s","startCreateDate":"Tg","endCreateDate":"jmZF","roleId":"22","resNo":"CQ","state":"jZ0"};200;200;空;空

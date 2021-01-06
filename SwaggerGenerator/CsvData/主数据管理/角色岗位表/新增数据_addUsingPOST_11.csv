@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"no":"KNn","updatedTime":"1976-11-01 12:23:10","creator":"h_","name":"WT","createdTime":"2072-08-21 10:02:08","description":"mK","showOrder":"x51v","id":"5","parentId":"0Fy","isEnable":"3","updater":"QXA8"};200;200;空;空

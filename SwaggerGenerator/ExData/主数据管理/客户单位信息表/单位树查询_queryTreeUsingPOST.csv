@@ -1,0 +1,22 @@
+'{
+	"address$(公司地址)":"NJ",
+	"englishName$(单位英文名称)":"TCv",
+	"updatedTime":"2038-03-25 12:58:05",
+	"creator":"82Ad",
+	"treeNo$(级别编码)":"Au",
+	"orgParentNo":"S0O",
+	"type$(单位类型0财务公司1成员单位2金融机构3其他合作伙伴4集团公司5结算中心7经销商6供应商8法人9其他)":"0",
+	"shortName$(中文简称)":"OFd",
+	"showOrder$(显示顺序)":"DjW",
+	"branchNo$(所属机构)":"W41P",
+	"chineseName$(单位名称)":"6I",
+	"state$(单位状态0正常1注销2停用9其他x未知)":"5041",
+	"updater":"Lal",
+	"cltNo$(单位编号)":"Y30",
+	"isEnable$(是否启用0未启用1启用)":"3",
+	"zipCode$(邮政编码)":"3S7",
+	"createdTime":"2068-02-17 02:16:07",
+	"id":"2256",
+	"orgParentId$(父单位)":"9kg",
+	"fullCusNo$(完整单位编号)":"KjC"
+}'

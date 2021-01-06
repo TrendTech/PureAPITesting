@@ -1,0 +1,13 @@
+'{
+	"no$(角色编号)":"tjJA",
+	"updatedTime":"2037-03-16 10:19:19",
+	"creator":"Qkr",
+	"isEnable$(是否启用0未启用1启用)":"1",
+	"parentId$(角色父id编号当该部门为顶级部门时该字段为0)":"lNf4",
+	"createdTime":"2036-01-30 01:22:17",
+	"name$(角色名称)":"WU3",
+	"description$(角色描述)":"r2",
+	"id":"302",
+	"showOrder$(显示顺序)":"k0",
+	"updater":"VZ"
+}'

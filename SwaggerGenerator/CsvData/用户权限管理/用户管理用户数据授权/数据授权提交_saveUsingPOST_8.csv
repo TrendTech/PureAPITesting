@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;[{"opNos":"C5O","relaNo":"Y5","oldUNo":"OtNj","roleId":"4265","opType":"1Rx","busyType":"nyQU","cltNo":"vt8","uNos":"8af","bussNo":"7rer","opNo":"yLjM","uNo":"f29","prelaNo":"gCd","isSerach":"y5"}];200;200;空;空

@@ -1,0 +1,28 @@
+'{
+	"data":{
+		"phone$(固定电话)":"uF",
+		"updatedTime":"2010-03-10 04:47:36",
+		"creator":"cvh",
+		"email$(邮箱)":"5yizfxv6ipsg@pYO.qmq",
+		"fullName$(人员名称)":"XRx",
+		"fullCltName$(客户名称)":"Yv5",
+		"name$(人员名称)":"I3YV",
+		"resignDate$(离职日期)":"2075-05-21 03:12:57",
+		"remark$(备注)":"Ff",
+		"cltName$(客户名称)":"w0EO",
+		"employDate$(入职日期)":"2025-11-29 03:13:49",
+		"updater":"3J",
+		"depName$(部门名称)":"jFV",
+		"employeeNo$(职工号)":"r2SW",
+		"mobile$(移动电话)":"xl",
+		"cltNo$(单位编号)":"mRf",
+		"gender$(性别1男2女)":"3",
+		"fax$(传真)":"xhC",
+		"createdTime":"1993-04-05 12:32:25",
+		"id":"5602",
+		"depNo$(部门编号)":"W2T",
+		"status$(状态0离职1在职)":"3"
+	},
+	"pageSize":"285",
+	"pageNum":"580"
+}'

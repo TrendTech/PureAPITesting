@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;[{"relCorpName":"1Q","relCropId":"9tp","accountName":"ztVl","cityCode":"hm","provinceCode":"aqdh","bankBranchName":"kV","relCorpId":"64g","relAccId":"li05","relCorpFullName":"iX","mobileTel":"z_v","bankCnaps":"eup4","regionCode":"6ndO","relCorpNo":"gy","cityName":"bwW","connector":"CV","innerOuterFlag":"OQw","accountNo":"Md0","bankBranchNo":"6Ul","bankNo":"Xb6c","provinceName":"bJ0","email":"0b8dc57usgtkna4@TiMN.bfm"}];200;200;空;空

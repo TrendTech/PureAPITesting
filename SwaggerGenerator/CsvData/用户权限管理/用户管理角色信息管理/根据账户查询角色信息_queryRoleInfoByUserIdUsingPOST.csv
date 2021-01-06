@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"roleNo":"4ab","isUsable":"aj5","roleId":"7561","pRoleId":"097","createUserNo":"tMs","displayOrder":"DCu","roleName":"QJ_","description":"aDm","userId":"912"};200;200;空;空

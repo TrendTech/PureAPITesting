@@ -1,0 +1,2 @@
+用例名;请求参数或报文;验证-回传Code;验证-业务Code;验证-响应Msg;验证-存在字符
+自动生成用例;{"data":{"updatedTime":"2057-01-08 07:42:37","creator":"we","pbocRegionCode$(人行地区编码)":"kPsg","source$(联行号来源)":"LnA","updater":"m1","bankAddr$(银行地址)":"u_H","cnapsNo$(联行号)":"ODJ","stdBankNo$(标准银行编号)":"RDq3","regionCode$(标准地区代码)":"nS","bankName$(银行名称)":"d4Ez","createdTime":"1992-07-03 11:42:46","bankNo$(银行编号)":"g4R","id":"00"},"pageSize":"5092","pageNum":"9"};200;200;空;空

@@ -1,0 +1,14 @@
+'{
+	"inputMenNo$(预算单元编号)":"zeR",
+	"pageSize$(每页记录数默认300条)":"7",
+	"currentPage$(当前页默认第一页)":"1",
+	"paging":{
+		"currentPage$(当前页)":"01",
+		"startRow":"885",
+		"totalPage":"3",
+		"endRow":"49",
+		"totalRow$(总记录数)":"4",
+		"pageSize$(每页记录数)":"20"
+	},
+	"inputMenName$(预算单元名称)":"iHb"
+}'

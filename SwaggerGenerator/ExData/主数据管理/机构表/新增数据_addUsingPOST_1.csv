@@ -1,0 +1,14 @@
+'{
+	"no$(营业机构号)":"OIT",
+	"levelCode$(机构分级码)":"MWN",
+	"type$(机构性质1总部机构2一般分支3结算中心)":"0",
+	"updatedTime":"2063-10-07 02:40:52",
+	"creator":"LkG",
+	"isEnable$(是否启用0未启用1启用)":"1",
+	"createdTime":"2074-11-14 11:49:46",
+	"cltNo$(单位编号客户编号)":"6WaA",
+	"id":"345",
+	"singleBook$(单独记账1是0否)":"1",
+	"name$(营业机构名称)":"Qod",
+	"updater":"vAIt"
+}'
