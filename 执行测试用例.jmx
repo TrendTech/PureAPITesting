@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="新网银" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="VAR" elementType="Argument">
+            <stringProp name="Argument.name">VAR</stringProp>
+            <stringProp name="Argument.value">PASS</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="VARS" elementType="Argument">
+            <stringProp name="Argument.name">VARS</stringProp>
+            <stringProp name="Argument.value">PASS</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="CASEPATH" elementType="Argument">
+            <stringProp name="Argument.name">CASEPATH</stringProp>
+            <stringProp name="Argument.value">CsvData</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="执行线程组" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="全局数据管理" enabled="true">
+          <stringProp name="filename">全局数据.csv</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="variableNames">GROUP,GROUP_PATH</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">;</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">false</boolProp>
+          <boolProp name="stopThread">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="GROUP" enabled="true">
+          <stringProp name="WhileController.condition">${__javaScript(&quot;${VAR}&quot; == &quot;PASS&quot;)}</stringProp>
+        </WhileController>
+        <hashTree>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="获取接口信息" enabled="true">
+            <stringProp name="BeanShellSampler.query">import java.text.*;
+import java.io.*;
+import java.util.*;
+import org.apache.jmeter.services.FileServer;
+
+String filename = FileServer.getFileServer().getBaseDir()+&quot;\\\&quot;+vars.get(&quot;GROUP_PATH&quot;);
+ArrayList strList = new ArrayList();     
+
+try {
+    File file = new File(filename);
+
+    if (!file.exists()) {
+        throw new Exception (&quot;ERROR: file &quot; + filename + &quot; not found&quot;);
+    }
+
+    BufferedReader bufRdr = new BufferedReader(new InputStreamReader(new FileInputStream(file), &quot;UTF8&quot;));
+    String line = null;
+    Integer i = 0;
+
+    while((line = bufRdr.readLine()) != null) {
+        strList.add(line);
+        i++;
+    }
+
+    bufRdr.close();            
+//	log.info(&quot;loop time:&quot;+String.valueOf(${__jm__GROUP__idx}+1)+&quot;thread time:&quot;+String.valueOf(${__threadNum}));
+//	log.info(vars.get(&quot;GROUP&quot;)+&quot;:总API数量&quot;+String.valueOf(i));
+//	log.info(&quot;thread time:&quot;+&quot;String.valueOf(${__threadNum}));
+
+
+    int counter = (${__jm__GROUP__idx});
+//    log.info(String.valueOf(counter));
+//    log.info(String.valueOf(i));
+    if (counter &lt; i) {
+	    String[] variables = strList.get(counter).split(&quot;;&quot;);
+	    vars.put(&quot;SUB_GROUP&quot;,variables[0]);
+	    vars.put(&quot;API_NAME&quot;,variables[1]);
+	    vars.put(&quot;API&quot;,variables[2]);
+	    vars.put(&quot;API_PATH&quot;,variables[3]);
+	    vars.put(&quot;API_METHOD&quot;,variables[4]);
+	    vars.put(&quot;API_TYPE&quot;,variables[5]);
+	    counter++;
+	    vars.put(&quot;counter&quot;,Integer.toString(counter));
+	    log.info(variables[2]);
+	    vars.put(&quot;VARS&quot;,&quot;PASS&quot;);
+    }else{
+    	vars.put(&quot;VAR&quot;,&quot;STOP&quot;);
+    }
+
+//    if(counter == i){
+//		vars.put(&quot;VAR&quot;,&quot;STOP&quot;);
+//    }
+}
+catch (Exception ex) {
+    vars.put(&quot;VAR&quot;,&quot;STOP&quot;);
+    IsSuccess = false; 
+    log.error(ex.getMessage());
+    System.err.println(ex.getMessage());
+}
+catch (Throwable thex) {
+    System.err.println(thex.getMessage());
+}finally{
+	
+}
+</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+          <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="SUBGROUP" enabled="true">
+            <stringProp name="WhileController.condition">${__javaScript(&quot;${VARS}&quot; == &quot;PASS&quot;)}</stringProp>
+          </WhileController>
+          <hashTree>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="获取用例信息" enabled="true">
+              <stringProp name="BeanShellSampler.query">import java.text.*;
+import java.io.*;
+import java.util.*;
+import org.apache.jmeter.services.FileServer;
+import com.api.cases.GetCaseInfo;
+
+StringBuffer strBuf = new StringBuffer();
+
+strBuf.append(FileServer.getFileServer().getBaseDir());
+strBuf.append(&quot;\\\&quot;+vars.get(&quot;CASEPATH&quot;));
+strBuf.append(&quot;\\\&quot;+vars.get(&quot;GROUP&quot;));
+strBuf.append(&quot;\\\&quot;+vars.get(&quot;SUB_GROUP&quot;));
+strBuf.append(&quot;\\\&quot;+vars.get(&quot;API_NAME&quot;));
+strBuf.append(&quot;_&quot;+vars.get(&quot;API&quot;)+&quot;.csv&quot;);
+
+String filename = strBuf.toString();
+ArrayList strList = new ArrayList();     
+
+try {
+	
+    File file = new File(filename);
+
+    if (!file.exists()) {
+    	   vars.put(&quot;VARS&quot;,&quot;STOP&quot;);
+        throw new Exception (&quot;ERROR: file &quot; + filename + &quot; not found&quot;);
+    }
+
+    BufferedReader bufRdr = new BufferedReader(new InputStreamReader(new FileInputStream(file), &quot;UTF8&quot;));
+    String line = null;
+    Integer i = 0;
+
+    while((line = bufRdr.readLine()) != null) {
+        strList.add(line);
+        i++;
+    }
+    
+    vars.put(&quot;TAG&quot;,&quot;PASS&quot;);
+    if(i==1){
+    	vars.put(&quot;TAG&quot;,&quot;STOP&quot;);
+    	vars.put(&quot;VARS&quot;,&quot;STOP&quot;);
+    }
+
+    bufRdr.close();            
+//	log.info(&quot;loop time11:&quot;+String.valueOf(${__jm__SUBGROUP__idx}+1)+&quot;thread time11:&quot;+String.valueOf(${__threadNum}));
+//	log.info(vars.get(&quot;API_NAME&quot;)+&quot;:总case数量&quot;+String.valueOf(i));
+
+    int counters = (${__jm__SUBGROUP__idx});
+
+    if ((counters &lt;= i)&amp;&amp;(i!=1)) {
+    	
+	    String[] variables = strList.get(counters).split(&quot;;&quot;);
+	    vars.put(&quot;CASE_NAME&quot;,variables[0]);
+	    vars.put(&quot;CASE_BODY&quot;,GetCaseInfo.getJsonWithFormat(variables[1]));
+//	    vars.put(&quot;CASE_BODY&quot;,variables[1]);
+//	    vars.put(&quot;CASE_BODY&quot;,variables[1].substring(1,variables[1].length()-1).replace(&quot;\&quot;\&quot;&quot;,&quot;\&quot;&quot;));
+	    vars.put(&quot;CASE_CODE&quot;,variables[2]);
+	    
+	    vars.put(&quot;CASE_R_CODE&quot;,variables[3]);
+	    
+	    vars.put(&quot;CASE_R_MSG&quot;,variables[4]);
+	    vars.put(&quot;CASE_TEXT&quot;,variables[5]);
+	    counters++;
+	    vars.put(&quot;counters&quot;,Integer.toString(counters));
+	    
+    }else{
+    		vars.put(&quot;VARS&quot;,&quot;STOP&quot;);
+    }
+
+    if(vars.get(&quot;API_TYPE&quot;).equals(&quot;BODY&quot;)){
+    	vars.put(&quot;CASE_PARAMETER&quot;,&quot;&quot;);
+    }else if(vars.get(&quot;API_TYPE&quot;).equals(&quot;PATH&quot;)){
+    	vars.put(&quot;CASE_PARAMETER&quot;,&quot;/&quot;+vars.get(&quot;CASE_BODY&quot;));
+    	vars.put(&quot;CASE_BODY&quot;,&quot;&quot;);
+    }else if(vars.get(&quot;API_TYPE&quot;).equals(&quot;FORMDATA&quot;)){
+    	vars.put(&quot;CASE_PARAMETER&quot;,&quot;&quot;);
+    }else if(vars.get(&quot;API_TYPE&quot;).equals(&quot;QUERY&quot;)){
+    	vars.put(&quot;CASE_PARAMETER&quot;,&quot;?&quot;+vars.get(&quot;CASE_BODY&quot;));
+    	vars.put(&quot;CASE_BODY&quot;,&quot;&quot;);
+    }
+
+    if(counters == i){
+		vars.put(&quot;VARS&quot;,&quot;STOP&quot;);
+    }
+}
+catch (Exception ex) {
+	vars.put(&quot;VARS&quot;,&quot;STOP&quot;);
+    IsSuccess = false; 
+    log.error(ex.getMessage());
+    System.err.println(ex.getMessage());
+}
+catch (Throwable thex) {
+    System.err.println(thex.getMessage());
+}
+</stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="IfController.condition">(&quot;${TAG}&quot;==&quot;PASS&quot;)&amp;&amp;(&quot;${__jm__SUBGROUP__idx}&quot;!=&quot;0&quot;)</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="FORMDATA" enabled="true">
+                <stringProp name="IfController.condition">(&quot;${API_TYPE}&quot;==&quot;FORMDATA&quot;)</stringProp>
+                <boolProp name="IfController.evaluateAll">false</boolProp>
+              </IfController>
+              <hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP - ${GROUP} - ${SUB_GROUP} - ${API_NAME}" enabled="true">
+                  <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
+                    <collectionProp name="HTTPFileArgs.files">
+                      <elementProp name="${CASE_BODY}" elementType="HTTPFileArg">
+                        <stringProp name="File.path">${CASE_BODY}</stringProp>
+                        <stringProp name="File.paramname">file</stringProp>
+                        <stringProp name="File.mimetype">multipart/form-data</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                    <collectionProp name="Arguments.arguments"/>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain">192.168.60.44</stringProp>
+                  <stringProp name="HTTPSampler.port">5001</stringProp>
+                  <stringProp name="HTTPSampler.protocol">http</stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                  <stringProp name="HTTPSampler.path">/bems${API_PATH}</stringProp>
+                  <stringProp name="HTTPSampler.method">${API_METHOD}</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="CODE验证" enabled="true">
+                    <collectionProp name="Asserion.test_strings">
+                      <stringProp name="-914952584">${CASE_CODE}</stringProp>
+                    </collectionProp>
+                    <stringProp name="Assertion.custom_message"></stringProp>
+                    <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                    <boolProp name="Assertion.assume_success">true</boolProp>
+                    <intProp name="Assertion.test_type">8</intProp>
+                  </ResponseAssertion>
+                  <hashTree/>
+                  <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="业务CODE验证" enabled="true">
+                    <collectionProp name="Asserion.test_strings">
+                      <stringProp name="2083904075">${CASE_R_CODE}</stringProp>
+                    </collectionProp>
+                    <stringProp name="Assertion.custom_message"></stringProp>
+                    <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                    <boolProp name="Assertion.assume_success">false</boolProp>
+                    <intProp name="Assertion.test_type">2</intProp>
+                  </ResponseAssertion>
+                  <hashTree/>
+                  <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应Msg验证" enabled="true">
+                    <collectionProp name="Asserion.test_strings">
+                      <stringProp name="2145734593">${CASE_R_MSG}</stringProp>
+                    </collectionProp>
+                    <stringProp name="Assertion.custom_message"></stringProp>
+                    <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                    <boolProp name="Assertion.assume_success">true</boolProp>
+                    <intProp name="Assertion.test_type">2</intProp>
+                  </ResponseAssertion>
+                  <hashTree/>
+                  <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="字符存在验证" enabled="true">
+                    <collectionProp name="Asserion.test_strings">
+                      <stringProp name="-899530952">${CASE_TEXT}</stringProp>
+                    </collectionProp>
+                    <stringProp name="Assertion.custom_message"></stringProp>
+                    <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                    <boolProp name="Assertion.assume_success">true</boolProp>
+                    <intProp name="Assertion.test_type">2</intProp>
+                  </ResponseAssertion>
+                  <hashTree/>
+                  <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion" enabled="false">
+                    <boolProp name="XPath.negate">false</boolProp>
+                    <stringProp name="XPath.xpath">/</stringProp>
+                    <boolProp name="XPath.validate">false</boolProp>
+                    <boolProp name="XPath.whitespace">false</boolProp>
+                    <boolProp name="XPath.tolerant">false</boolProp>
+                    <boolProp name="XPath.namespace">false</boolProp>
+                  </XPathAssertion>
+                  <hashTree/>
+                </hashTree>
+              </hashTree>
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="非 FORMDATA" enabled="true">
+                <stringProp name="IfController.condition">(&quot;${API_TYPE}&quot;!=&quot;FORMDATA&quot;)</stringProp>
+                <boolProp name="IfController.evaluateAll">false</boolProp>
+              </IfController>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP - ${GROUP} - ${SUB_GROUP} - ${API_NAME}" enabled="true">
+                  <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">${CASE_BODY}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain">192.168.60.44</stringProp>
+                  <stringProp name="HTTPSampler.port">5001</stringProp>
+                  <stringProp name="HTTPSampler.protocol">http</stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                  <stringProp name="HTTPSampler.path">/bems${API_PATH}${CASE_PARAMETER}</stringProp>
+                  <stringProp name="HTTPSampler.method">${API_METHOD}</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="CODE验证" enabled="true">
+                    <collectionProp name="Asserion.test_strings">
+                      <stringProp name="-914952584">${CASE_CODE}</stringProp>
+                    </collectionProp>
+                    <stringProp name="Assertion.custom_message"></stringProp>
+                    <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                    <boolProp name="Assertion.assume_success">true</boolProp>
+                    <intProp name="Assertion.test_type">8</intProp>
+                  </ResponseAssertion>
+                  <hashTree/>
+                  <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="业务CODE验证" enabled="true">
+                    <collectionProp name="Asserion.test_strings">
+                      <stringProp name="2083904075">${CASE_R_CODE}</stringProp>
+                    </collectionProp>
+                    <stringProp name="Assertion.custom_message"></stringProp>
+                    <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                    <boolProp name="Assertion.assume_success">false</boolProp>
+                    <intProp name="Assertion.test_type">2</intProp>
+                  </ResponseAssertion>
+                  <hashTree/>
+                  <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应Msg验证" enabled="true">
+                    <collectionProp name="Asserion.test_strings">
+                      <stringProp name="2145734593">${CASE_R_MSG}</stringProp>
+                    </collectionProp>
+                    <stringProp name="Assertion.custom_message"></stringProp>
+                    <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                    <boolProp name="Assertion.assume_success">true</boolProp>
+                    <intProp name="Assertion.test_type">2</intProp>
+                  </ResponseAssertion>
+                  <hashTree/>
+                  <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="字符存在验证" enabled="true">
+                    <collectionProp name="Asserion.test_strings">
+                      <stringProp name="-899530952">${CASE_TEXT}</stringProp>
+                    </collectionProp>
+                    <stringProp name="Assertion.custom_message"></stringProp>
+                    <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                    <boolProp name="Assertion.assume_success">true</boolProp>
+                    <intProp name="Assertion.test_type">2</intProp>
+                  </ResponseAssertion>
+                  <hashTree/>
+                  <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="UUID转换" enabled="false">
+                    <boolProp name="resetInterpreter">false</boolProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="script">import java.util.UUID;
+
+String body = vars.get(&quot;CASE_BODY&quot;);
+body.replace(&quot;${UUID}&quot;, UUID.randomUUID().toString());
+vars.put(&quot;CASE_BODY&quot;,body);</stringProp>
+                  </BeanShellPreProcessor>
+                  <hashTree/>
+                </hashTree>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">true</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
